@@ -28,7 +28,16 @@ export default function HinotePrivacyPage() {
 
           <div className="mt-4 text-sm text-gray-500">
             <p>Last updated: 2026-04-06</p>
-            <p>Contact: support@hinote.app</p>
+            <p>Contact: support.greenapp@gmail.com</p>
+            <p>
+              Support URL:{" "}
+              <a
+                href="https://apps-privacy-three.vercel.app/hinote/support"
+                className="text-gray-700 underline underline-offset-4 hover:text-black"
+              >
+                https://apps-privacy-three.vercel.app/hinote/support
+              </a>
+            </p>
           </div>
         </header>
 
@@ -36,8 +45,8 @@ export default function HinotePrivacyPage() {
         <section className="space-y-8 text-[15px] leading-7">
           <Article title="1. General Information">
             <p>
-              This Privacy Policy explains how Hinote ("we", "our", or "us")
-              handles your information.
+              This Privacy Policy explains how Hinote (&quot;we&quot;,
+              &quot;our&quot;, or &quot;us&quot;) handles your information.
             </p>
             <p>
               Hinote is designed to be fully offline. Your data stays entirely
@@ -77,7 +86,7 @@ export default function HinotePrivacyPage() {
               All data is stored locally on your device using secure storage.
             </p>
             <p>
-              The security of your data depends on your device's protection
+              The security of your data depends on your device&apos;s protection
               (passcode, biometrics, etc.).
             </p>
           </Article>
@@ -107,7 +116,16 @@ export default function HinotePrivacyPage() {
           </Article>
 
           <Article title="10. Contact">
-            <p>support.greenapp@gmail.com</p>
+            <p>Email: support.greenapp@gmail.com</p>
+            <p>
+              Support page:{" "}
+              <a
+                href="https://apps-privacy-three.vercel.app/hinote/support"
+                className="text-gray-700 underline underline-offset-4 hover:text-black"
+              >
+                https://apps-privacy-three.vercel.app/hinote/support
+              </a>
+            </p>
           </Article>
         </section>
       </div>
