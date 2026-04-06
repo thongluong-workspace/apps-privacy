@@ -107,7 +107,7 @@ export default function HinotePrivacyPage() {
           </Article>
 
           <Article title="10. Contact">
-            <p>support@hinote.app</p>
+            <p>support.greenapp@gmail.com</p>
           </Article>
         </section>
       </div>
