@@ -3,183 +3,153 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Hinote Support",
-  description: "Support center for Hinote.",
+  description:
+    "Official support page for Hinote - offline note-taking app.",
 };
-
-const quickActions = [
-  {
-    title: "Send a support request",
-    description: "Reach out for help with setup, bugs, or account-related questions.",
-    href: "mailto:support.greenapp@gmail.com",
-    label: "Email support",
-  },
-  {
-    title: "Read the privacy policy",
-    description: "Review how Hinote handles data and what users can control.",
-    href: "/hinote/privacy",
-    label: "Open privacy page",
-  },
-  {
-    title: "Open support URL",
-    description: "Use the public support page for customer-facing communication.",
-    href: "https://apps-privacy-three.vercel.app/hinote/support",
-    label: "Visit support URL",
-  },
-];
-
-const resourceGroups = [
-  {
-    heading: "Getting started",
-    items: [
-      "Set up Hinote and begin writing notes right away.",
-      "Understand how offline storage works on your device.",
-      "Find the quickest path for reporting bugs or asking questions.",
-    ],
-  },
-  {
-    heading: "Policies",
-    items: [
-      "Privacy Policy",
-      "Terms of Use",
-      "Data deletion requests",
-    ],
-  },
-];
 
 export default function HinoteSupportPage() {
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(251,146,60,0.18),_transparent_25%),linear-gradient(180deg,_#fffaf5_0%,_#ffffff_45%,_#fff7ed_100%)] px-6 py-8 text-slate-900 sm:px-10 lg:px-14">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8">
-        <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500">
-          <Link href="/" className="transition hover:text-slate-900">
+    <main className="min-h-screen bg-white px-6 py-10 text-gray-900">
+      <div className="mx-auto max-w-3xl">
+        {/* Breadcrumb */}
+        <div className="mb-6 text-sm text-gray-500">
+          <Link href="/" className="hover:text-black">
             Privacy Center
-          </Link>
-          <span>/</span>
-          <span className="text-slate-900">Hinote</span>
-          <span>/</span>
-          <span className="text-slate-900">support</span>
+          </Link>{" "}
+          / Hinote / Support
         </div>
 
-        <section className="overflow-hidden rounded-[2rem] border border-white/70 bg-white/85 p-8 shadow-[0_20px_70px_rgba(234,88,12,0.10)] backdrop-blur sm:p-10">
-          <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
-            <div className="space-y-5">
-              <span className="inline-flex w-fit rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-sm font-medium text-orange-700">
-                Hinote Support Center
-              </span>
-              <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-                Hi there, how can we help with Hinote today?
-              </h1>
-              <p className="max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                Find the right place to get support, review privacy information,
-                or use the official support URL for Hinote.
-              </p>
+        {/* Header */}
+        <header className="mb-10">
+          <h1 className="text-3xl font-semibold">Hinote Support</h1>
+          <p className="mt-2 text-gray-600">
+            Get help, report issues, or send feedback about Hinote.
+          </p>
 
-              <div className="flex items-center rounded-[1.25rem] border border-slate-200 bg-slate-50 px-5 py-4 text-sm text-slate-500 shadow-inner">
-                <span className="mr-3 text-base text-orange-500">/</span>
-                <span className="flex-1">
-                  https://apps-privacy-three.vercel.app/hinote/support
-                </span>
-                <a
-                  href="https://apps-privacy-three.vercel.app/hinote/support"
-                  className="rounded-full bg-slate-950 px-4 py-2 font-medium text-white transition hover:bg-slate-800"
-                >
-                  Open
-                </a>
-              </div>
+          <div className="mt-4 text-sm text-gray-500">
+            <p>Last updated: 2026-04-06</p>
+            <p>Email: support.greenapp@gmail.com</p>
+          </div>
+        </header>
+
+        {/* Highlight Box */}
+        <section className="mb-8 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+          <h2 className="text-lg font-semibold">About Hinote</h2>
+          <p className="mt-2 text-gray-700 leading-7">
+            Hinote is a simple, offline-first note-taking app. All your notes
+            are stored locally on your device. No login, no cloud sync, and no
+            data collection.
+          </p>
+        </section>
+
+        {/* Quick Actions */}
+        <section className="mb-8 grid gap-4 sm:grid-cols-2">
+          <a
+            href="mailto:support.greenapp@gmail.com?subject=Hinote Support"
+            className="rounded-xl border border-gray-200 p-5 hover:bg-gray-50"
+          >
+            <h3 className="font-medium">Contact Support</h3>
+            <p className="mt-1 text-sm text-gray-600">
+              Send us an email if you need help or have questions.
+            </p>
+          </a>
+
+          <a
+            href="mailto:support.greenapp@gmail.com?subject=Hinote Bug Report"
+            className="rounded-xl border border-gray-200 p-5 hover:bg-gray-50"
+          >
+            <h3 className="font-medium">Report a Bug</h3>
+            <p className="mt-1 text-sm text-gray-600">
+              Found an issue? Let us know so we can fix it.
+            </p>
+          </a>
+
+          <a
+            href="mailto:support.greenapp@gmail.com?subject=Hinote Feedback"
+            className="rounded-xl border border-gray-200 p-5 hover:bg-gray-50"
+          >
+            <h3 className="font-medium">Send Feedback</h3>
+            <p className="mt-1 text-sm text-gray-600">
+              Share ideas to improve Hinote.
+            </p>
+          </a>
+
+          <Link
+            href="/hinote/privacy"
+            className="rounded-xl border border-gray-200 p-5 hover:bg-gray-50"
+          >
+            <h3 className="font-medium">Privacy Policy</h3>
+            <p className="mt-1 text-sm text-gray-600">
+              Learn how your data is handled.
+            </p>
+          </Link>
+        </section>
+
+        {/* FAQ */}
+        <section className="rounded-2xl border border-gray-200 p-6">
+          <h2 className="text-lg font-semibold">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="mt-4 space-y-5 text-gray-700 leading-7">
+            <div>
+              <p className="font-medium">
+                Does Hinote require an account?
+              </p>
+              <p>No. You can use Hinote without signing up.</p>
             </div>
 
-            <aside className="rounded-[1.5rem] border border-orange-100 bg-orange-50/70 p-6">
-              <p className="text-sm font-semibold text-slate-950">
-                Support details
+            <div>
+              <p className="font-medium">
+                Where is my data stored?
               </p>
-              <div className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
-                <p>Product: Hinote</p>
-                <p>Support email: support.greenapp@gmail.com</p>
-                <p>
-                  Support URL:
-                  {" "}
-                  https://apps-privacy-three.vercel.app/hinote/support
-                </p>
-                <p>Last updated: 2026-04-06</p>
-              </div>
-            </aside>
+              <p>
+                All data is stored locally on your device using secure storage.
+              </p>
+            </div>
+
+            <div>
+              <p className="font-medium">
+                Does Hinote collect my data?
+              </p>
+              <p>No. Hinote does not collect or track any user data.</p>
+            </div>
+
+            <div>
+              <p className="font-medium">
+                Can I recover deleted notes?
+              </p>
+              <p>
+                No. Deleted notes cannot be recovered. Please confirm before
+                deleting.
+              </p>
+            </div>
+
+            <div>
+              <p className="font-medium">
+                I lost my data after reinstalling the app
+              </p>
+              <p>
+                Since Hinote works offline and stores data locally,
+                uninstalling the app will remove all data permanently.
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="grid gap-5 lg:grid-cols-3">
-          {quickActions.map((action) => (
-            <article
-              key={action.title}
-              className="rounded-[1.5rem] border border-slate-200/80 bg-white p-6 shadow-[0_12px_40px_rgba(15,23,42,0.06)]"
+        {/* Footer */}
+        <footer className="mt-10 text-sm text-gray-500">
+          <p>© {new Date().getFullYear()} Hinote</p>
+          <p className="mt-1">
+            Support URL:{" "}
+            <a
+              href="https://apps-privacy-three.vercel.app/hinote/support"
+              className="underline hover:text-black"
             >
-              <h2 className="text-xl font-semibold tracking-tight text-slate-950">
-                {action.title}
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {action.description}
-              </p>
-              <a
-                href={action.href}
-                className="mt-6 inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
-              >
-                {action.label}
-              </a>
-            </article>
-          ))}
-        </section>
-
-        <section className="grid gap-5 lg:grid-cols-[1fr_1fr]">
-          {resourceGroups.map((group) => (
-            <article
-              key={group.heading}
-              className="rounded-[1.5rem] border border-slate-200/80 bg-white p-6 shadow-[0_12px_40px_rgba(15,23,42,0.05)]"
-            >
-              <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                {group.heading}
-              </h2>
-              <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-600">
-                {group.items.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-orange-400" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </section>
-
-        <section className="rounded-[2rem] border border-slate-200/80 bg-slate-950 px-8 py-10 text-white shadow-[0_20px_60px_rgba(15,23,42,0.18)]">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl space-y-3">
-              <p className="text-sm uppercase tracking-[0.24em] text-orange-200">
-                Contact
-              </p>
-              <h2 className="text-3xl font-semibold tracking-tight">
-                Need direct help from the Hinote team?
-              </h2>
-              <p className="text-sm leading-7 text-slate-300">
-                Send your issue details, device information, and screenshots if
-                available so we can help faster.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="mailto:support.greenapp@gmail.com"
-                className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-orange-50"
-              >
-                support.greenapp@gmail.com
-              </a>
-              <a
-                href="https://apps-privacy-three.vercel.app/hinote/support"
-                className="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
-              >
-                apps-privacy-three.vercel.app/hinote/support
-              </a>
-            </div>
-          </div>
-        </section>
+              https://apps-privacy-three.vercel.app/hinote/support
+            </a>
+          </p>
+        </footer>
       </div>
     </main>
   );
