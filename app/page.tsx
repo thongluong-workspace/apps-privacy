@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="group rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_16px_50px_rgba(15,23,42,0.06)] transition-transform duration-300 hover:-translate-y-1">
+          {/* <article className="group rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_16px_50px_rgba(15,23,42,0.06)] transition-transform duration-300 hover:-translate-y-1">
             <div
               className="mb-5 h-2 w-24 rounded-full"
               style={{
@@ -134,7 +134,7 @@ export default function Home() {
                 View details
               </Link>
             </div>
-          </article>
+          </article> */}
         </section>
       </div>
     </main>
